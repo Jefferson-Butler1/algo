@@ -1,4 +1,4 @@
-from fraction import Fraction
+from src.fraction import Fraction
 import pytest
 
 

@@ -1,4 +1,4 @@
-from doubly_linked import DoublyLinkedList
+from src.dll import DoublyLinkedList
 
 
 def test_adds_front():

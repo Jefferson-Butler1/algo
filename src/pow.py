@@ -1,5 +1,4 @@
 def pow(a,n):
-    print(f'power({a}, {n})')
     if n == 0:
         return 1
     if n % 2 ==0:

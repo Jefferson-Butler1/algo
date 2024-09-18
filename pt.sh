@@ -34,9 +34,9 @@ fi
 # Add the project root to PYTHONPATH
 export PYTHONPATH="$current_dir:$PYTHONPATH"
 
-# Run pytest for all files matching the patterns *.test.py and test_*.py
-echo "Running Python tests in $current_dir/test directory"
-pytest -v "$current_dir/test"
+# Run pytest with improved discovery and verbose output
+echo "Running Python tests in $current_dir"
+pytest -v --tb=short -s --capture=no "$current_dir/test" "$current_dir"
 
 # Store the exit status
 exit_status=$?
