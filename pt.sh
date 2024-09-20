@@ -36,11 +36,22 @@ export PYTHONPATH="$current_dir:$PYTHONPATH"
 
 # Run pytest with improved discovery and verbose output
 echo "Running Python tests in $current_dir"
-pytest -v --tb=short -s --capture=no "$current_dir/test" "$current_dir"
-
-# Store the exit status
+pytest_output=$(pytest -v --tb=short -s --capture=no --color=yes "$current_dir/test" "$current_dir")
 exit_status=$?
 
+# Display pytest output with original colors
+echo "$pytest_output"
+
+# Display additional information with bat
+echo -e "\nAdditional Information:" | bat --style=header --color=always
+echo "$pytest_output" | grep -v '^\(======\|------\|______\)' | bat --style=plain --color=always
+
+# Check the exit status
+if [ $exit_status -eq 0 ]; then
+    echo "All tests passed successfully!" | bat --style=header --color=always
+else
+    echo "Some tests failed. Please check the output above for details." | bat --style=header --color=always
+fi
 # Check the exit status
 if [ $exit_status -eq 0 ]; then
     echo "All tests passed successfully!"

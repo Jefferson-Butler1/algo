@@ -32,9 +32,9 @@ def test_removes_front():
 
 def test_removes_back():
     ls = DoublyLinkedList()
-    ls.add_back(1)
-    ls.add_back(2)
-    ls.add_back(3)
+    ls.add_front(3)
+    ls.add_front(2)
+    ls.add_front(1)
     ls.remove_back()
     assert str(ls) == '<1, 2>'
     ls.remove_back()
@@ -68,3 +68,24 @@ def test_removals_do_not_break_concatenation():
     b.remove_back()
     a.concatenate(b)
     assert str(a) == '<1, 2, 5, 6>'
+
+
+def test_str_reverse():
+    a = DoublyLinkedList()
+    for i in range(4):
+        a.add_back(i)
+    assert a.str_reverse() == "<3, 2, 1, 0>"
+
+def test_reverse():
+    a = DoublyLinkedList()
+    for i in range(4):
+        a.add_back(i)
+    a.reverse()
+    assert str(a) == "<3, 2, 1, 0>"
+
+def test_remove():
+    a = DoublyLinkedList()
+    for i in range(4):
+        a.add_back(i)
+    a.remove(2)
+    assert str(a) == "<0, 1, 3>"
