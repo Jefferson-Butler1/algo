@@ -11,16 +11,28 @@ class DoublyLinkedList:
         self.head.prev = self.head
     
     def __repr__(self) -> str:
-        if not self.head.next:
-            # impossible case, init sets it to a self referencing node
-            return "<>"
-
-        curr: Node = self.head.next
-        builder = "<"
+        values = []
+        curr = self.head.next
         while curr != self.head:
-            builder += str(curr.item) + ", "
+            values.append(str(curr.item))
             curr = curr.next
-        return builder + ">"
+        return "<" + ", ".join(values) + ">"
+    def str_reverse(self):
+        values = []
+        curr = self.head.prev
+        while curr != self.head:
+            values.append(str(curr.item))
+            curr = curr.prev
+        return "<" + ", ".join(values) + ">"
+
+
+    def add_back(self, val):
+        new = Node(item = val, prev = self.head.prev, next = self.head)
+        if not (self.head.prev and new.next):
+            # impossible case, init sets new nodes as self referencing 
+            return None
+        self.head.prev= new
+        new.prev.next = new
 
     def add_front(self, val):
         new = Node(item = val, prev = self.head, next = self.head.next)
@@ -29,6 +41,28 @@ class DoublyLinkedList:
             return None
         self.head.next = new
         new.next.prev = new
+
+    def remove_back(self):
+        target = self.head.prev
+        if(target == self.head):
+            return None
+        self.head.prev= self.head.prev.prev
+        self.head.prev.next = self.head
+        return target.item
+
+    def remove_front(self):
+        target = self.head.next
+        if(target == self.head):
+            return None
+        self.head.next = self.head.next.next
+        self.head.next.prev = self.head
+        return target.item
+
+    def concatenate(self, more):
+        next = more.remove_front()
+        while next:
+            self.add_back(next)
+            next = more.remove_front()
 
 
 
