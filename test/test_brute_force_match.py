@@ -32,13 +32,13 @@ def finds_match(m, n, dense):
     overwrite(pattern, text, i, j)
     assert match(pattern, text) == (i, j)
 
-#def test_finds_small_matches_in_dense_arrays():
-#    for _ in range(10):
-#        finds_match(3, 10, True)
-#
-#def test_finds_large_matches_in_dense_arrays():
-#    for _ in range(10):
-#        finds_match(50, 200, True)
+def test_finds_small_matches_in_dense_arrays():
+    for _ in range(10):
+        finds_match(3, 10, True)
+
+def test_finds_large_matches_in_dense_arrays():
+    for _ in range(10):
+        finds_match(50, 200, True)
 
 def test_finds_small_matches_in_sparse_arrays():
     for _ in range(10):

@@ -1,0 +1,453 @@
+Creating a fresh virtual environment...
+Installing requirements from requirements.txt...
+Collecting pytest (from -r requirements.txt (line 1))
+  Using cached pytest-8.3.3-py3-none-any.whl.metadata (7.5 kB)
+Collecting iniconfig (from pytest->-r requirements.txt (line 1))
+  Using cached iniconfig-2.0.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting packaging (from pytest->-r requirements.txt (line 1))
+  Using cached packaging-24.1-py3-none-any.whl.metadata (3.2 kB)
+Collecting pluggy<2,>=1.5 (from pytest->-r requirements.txt (line 1))
+  Using cached pluggy-1.5.0-py3-none-any.whl.metadata (4.8 kB)
+Using cached pytest-8.3.3-py3-none-any.whl (342 kB)
+Using cached pluggy-1.5.0-py3-none-any.whl (20 kB)
+Using cached iniconfig-2.0.0-py3-none-any.whl (5.9 kB)
+Using cached packaging-24.1-py3-none-any.whl (53 kB)
+Installing collected packages: pluggy, packaging, iniconfig, pytest
+Successfully installed iniconfig-2.0.0 packaging-24.1 pluggy-1.5.0 pytest-8.3.3
+Virtual environment created and activated.
+Running Python tests in /Users/jeffopportunityeducation/academicCode/algo
+[1m================================================================ test session starts ================================================================[0m
+platform darwin -- Python 3.12.6, pytest-8.3.3, pluggy-1.5.0 -- /Users/jeffopportunityeducation/academicCode/algo/.venv/bin/python3.12
+cachedir: .pytest_cache
+rootdir: /Users/jeffopportunityeducation/academicCode/algo
+[1mcollecting ... [0mcollected 36 items
+
+test/bloom_test.py::test_key_is_not_initially_present 281474976710657
+162259276829213363391578010288130
+2596148429267413814265248164610052
+20769187434139310514121985316880392
+2658455991569831745807614120560689168
+166153499473114484112975882535043104
+281474976710720
+70368744177792
+2535301200456458802993406411008
+158456325028528675187087901184
+41538374868278621028243970633761792
+83076749736557242056487941267523584
+2535301200456458802993406414848
+20769187434139310514121985316888576
+70368744194048
+1298074214633706907132624082337792
+2535301200456458802993406476288
+70368744308736
+81129638414606681695789005406208
+5192296858534827628530496329744384
+2958557217822987346387886199828119551
+[31mERROR[0m
+test/bloom_test.py::test_adds_key 281474976710657
+162259276829213363391578010288130
+2596148429267413814265248164610052
+20769187434139310514121985316880392
+2658455991569831745807614120560689168
+166153499473114484112975882535043104
+281474976710720
+70368744177792
+2535301200456458802993406411008
+158456325028528675187087901184
+41538374868278621028243970633761792
+83076749736557242056487941267523584
+2535301200456458802993406414848
+20769187434139310514121985316888576
+70368744194048
+1298074214633706907132624082337792
+2535301200456458802993406476288
+70368744308736
+81129638414606681695789005406208
+5192296858534827628530496329744384
+2958557217822987346387886199828119551
+[31mERROR[0m
+test/bloom_test.py::test_add_sets_two_bits 281474976710657
+162259276829213363391578010288130
+2596148429267413814265248164610052
+20769187434139310514121985316880392
+2658455991569831745807614120560689168
+166153499473114484112975882535043104
+281474976710720
+70368744177792
+2535301200456458802993406411008
+158456325028528675187087901184
+41538374868278621028243970633761792
+83076749736557242056487941267523584
+2535301200456458802993406414848
+20769187434139310514121985316888576
+70368744194048
+1298074214633706907132624082337792
+2535301200456458802993406476288
+70368744308736
+81129638414606681695789005406208
+5192296858534827628530496329744384
+2958557217822987346387886199828119551
+[31mERROR[0m
+test/bloom_test.py::test_add_does_not_add_another_item 281474976710657
+162259276829213363391578010288130
+2596148429267413814265248164610052
+20769187434139310514121985316880392
+2658455991569831745807614120560689168
+166153499473114484112975882535043104
+281474976710720
+70368744177792
+2535301200456458802993406411008
+158456325028528675187087901184
+41538374868278621028243970633761792
+83076749736557242056487941267523584
+2535301200456458802993406414848
+20769187434139310514121985316888576
+70368744194048
+1298074214633706907132624082337792
+2535301200456458802993406476288
+70368744308736
+81129638414606681695789005406208
+5192296858534827628530496329744384
+2958557217822987346387886199828119551
+[31mERROR[0m
+test/bloom_test.py::test_adds_all_entries 281474976710657
+162259276829213363391578010288130
+2596148429267413814265248164610052
+20769187434139310514121985316880392
+2658455991569831745807614120560689168
+166153499473114484112975882535043104
+281474976710720
+70368744177792
+2535301200456458802993406411008
+158456325028528675187087901184
+41538374868278621028243970633761792
+83076749736557242056487941267523584
+2535301200456458802993406414848
+20769187434139310514121985316888576
+70368744194048
+1298074214633706907132624082337792
+2535301200456458802993406476288
+70368744308736
+81129638414606681695789005406208
+5192296858534827628530496329744384
+2958557217822987346387886199828119551
+[31mERROR[0m
+test/bloom_test.py::test_false_positive_rate_is_low 281474976710657
+162259276829213363391578010288130
+2596148429267413814265248164610052
+20769187434139310514121985316880392
+2658455991569831745807614120560689168
+166153499473114484112975882535043104
+281474976710720
+70368744177792
+2535301200456458802993406411008
+158456325028528675187087901184
+41538374868278621028243970633761792
+83076749736557242056487941267523584
+2535301200456458802993406414848
+20769187434139310514121985316888576
+70368744194048
+1298074214633706907132624082337792
+2535301200456458802993406476288
+70368744308736
+81129638414606681695789005406208
+5192296858534827628530496329744384
+2958557217822987346387886199828119551
+[31mERROR[0m
+test/bubble_test.py::test_sorts [32mPASSED[0m
+test/dll_test.py::test_adds_front [32mPASSED[0m
+test/dll_test.py::test_adds_back [32mPASSED[0m
+test/dll_test.py::test_removes_front [32mPASSED[0m
+test/dll_test.py::test_removes_back [32mPASSED[0m
+test/dll_test.py::test_concatenates [32mPASSED[0m
+test/dll_test.py::test_removals_do_not_break_concatenation [32mPASSED[0m
+test/dll_test.py::test_str_reverse [32mPASSED[0m
+test/dll_test.py::test_reverse [32mPASSED[0m
+test/dll_test.py::test_remove [32mPASSED[0m
+test/fraction_test.py::test_represents_simple_fraction [32mPASSED[0m
+test/fraction_test.py::test_reduces_to_lowest_terms [32mPASSED[0m
+test/fraction_test.py::test_handles_negative_denominator [32mPASSED[0m
+test/fraction_test.py::test_handles_negative_numerator_and_denominator [32mPASSED[0m
+test/fraction_test.py::test_represents_improper_fraction [32mPASSED[0m
+test/fraction_test.py::test_adds [32mPASSED[0m
+test/fraction_test.py::test_subtracts [32mPASSED[0m
+test/fraction_test.py::test_multiplies [32mPASSED[0m
+test/fraction_test.py::test_divides [32mPASSED[0m
+test/fraction_test.py::test_approximates [32mPASSED[0m
+test/gcd_test.py::test_finds_gcd_when_a_less [32mPASSED[0m
+test/gcd_test.py::test_finds_gcd_when_a_greater [32mPASSED[0m
+test/gcd_test.py::test_finds_gcd_when_a_is_exact_divisor [32mPASSED[0m
+test/log_test.py::test_works_for_exact_power [32mPASSED[0m
+test/log_test.py::test_works_for_inexact_power [32mPASSED[0m
+test/log_test.py::test_works_if_a_is_greater_than_b [32mPASSED[0m
+test/log_test.py::test_works_if_division_would_skip_over_1 [32mPASSED[0m
+test/log_test.py::test_matches_math_library [32mPASSED[0m
+test/pow_test.py::test_2_3 [32mPASSED[0m
+test/pow_test.py::test_10_3 [32mPASSED[0m
+
+====================================================================== ERRORS =======================================================================
+[31m[1m________________________________________________ ERROR at setup of test_key_is_not_initially_present ________________________________________________[0m
+[1m[31mtest/bloom_test.py[0m:13: in filter_
+    yield BloomFilter() # The test is run here
+[1m[31msrc/bloom.py[0m:26: in __init__
+    self.bits |= 1 << hashed
+[1m[31mE   OverflowError: too many digits in integer[0m
+[31m[1m__________________________________________________________ ERROR at setup of test_adds_key __________________________________________________________[0m
+[1m[31mtest/bloom_test.py[0m:13: in filter_
+    yield BloomFilter() # The test is run here
+[1m[31msrc/bloom.py[0m:26: in __init__
+    self.bits |= 1 << hashed
+[1m[31mE   OverflowError: too many digits in integer[0m
+[31m[1m_____________________________________________________ ERROR at setup of test_add_sets_two_bits ______________________________________________________[0m
+[1m[31mtest/bloom_test.py[0m:13: in filter_
+    yield BloomFilter() # The test is run here
+[1m[31msrc/bloom.py[0m:26: in __init__
+    self.bits |= 1 << hashed
+[1m[31mE   OverflowError: too many digits in integer[0m
+[31m[1m_______________________________________________ ERROR at setup of test_add_does_not_add_another_item ________________________________________________[0m
+[1m[31mtest/bloom_test.py[0m:13: in filter_
+    yield BloomFilter() # The test is run here
+[1m[31msrc/bloom.py[0m:26: in __init__
+    self.bits |= 1 << hashed
+[1m[31mE   OverflowError: too many digits in integer[0m
+[31m[1m______________________________________________________ ERROR at setup of test_adds_all_entries ______________________________________________________[0m
+[1m[31mtest/bloom_test.py[0m:13: in filter_
+    yield BloomFilter() # The test is run here
+[1m[31msrc/bloom.py[0m:26: in __init__
+    self.bits |= 1 << hashed
+[1m[31mE   OverflowError: too many digits in integer[0m
+[31m[1m_________________________________________________ ERROR at setup of test_false_positive_rate_is_low _________________________________________________[0m
+[1m[31mtest/bloom_test.py[0m:13: in filter_
+    yield BloomFilter() # The test is run here
+[1m[31msrc/bloom.py[0m:26: in __init__
+    self.bits |= 1 << hashed
+[1m[31mE   OverflowError: too many digits in integer[0m
+[36m[1m============================================================== short test summary info ==============================================================[0m
+[31mERROR[0m test/bloom_test.py::[1mtest_key_is_not_initially_present[0m - OverflowError: too many digits in integer
+[31mERROR[0m test/bloom_test.py::[1mtest_adds_key[0m - OverflowError: too many digits in integer
+[31mERROR[0m test/bloom_test.py::[1mtest_add_sets_two_bits[0m - OverflowError: too many digits in integer
+[31mERROR[0m test/bloom_test.py::[1mtest_add_does_not_add_another_item[0m - OverflowError: too many digits in integer
+[31mERROR[0m test/bloom_test.py::[1mtest_adds_all_entries[0m - OverflowError: too many digits in integer
+[31mERROR[0m test/bloom_test.py::[1mtest_false_positive_rate_is_low[0m - OverflowError: too many digits in integer
+[31m=========================================================== [32m30 passed[0m, [31m[1m6 errors[0m[31m in 0.14s[0m[31m ============================================================[0m
+[1mSTDIN[0m
+
+[38;2;205;214;244mAdditional Information:[0m
+[1m[38;2;205;214;244m[1m================================================================ test session starts ================================================================[0m[0m
+[38;2;205;214;244mplatform darwin -- Python 3.12.6, pytest-8.3.3, pluggy-1.5.0 -- /Users/jeffopportunityeducation/academicCode/algo/.venv/bin/python3.12[0m
+[38;2;205;214;244mcachedir: .pytest_cache[0m
+[38;2;205;214;244mrootdir: /Users/jeffopportunityeducation/academicCode/algo[0m
+[1m[38;2;205;214;244m[1mcollecting ... [0m[0m[38;2;205;214;244mcollected 36 items[0m
+
+[38;2;205;214;244mtest/bloom_test.py::test_key_is_not_initially_present 281474976710657[0m
+[38;2;205;214;244m162259276829213363391578010288130[0m
+[38;2;205;214;244m2596148429267413814265248164610052[0m
+[38;2;205;214;244m20769187434139310514121985316880392[0m
+[38;2;205;214;244m2658455991569831745807614120560689168[0m
+[38;2;205;214;244m166153499473114484112975882535043104[0m
+[38;2;205;214;244m281474976710720[0m
+[38;2;205;214;244m70368744177792[0m
+[38;2;205;214;244m2535301200456458802993406411008[0m
+[38;2;205;214;244m158456325028528675187087901184[0m
+[38;2;205;214;244m41538374868278621028243970633761792[0m
+[38;2;205;214;244m83076749736557242056487941267523584[0m
+[38;2;205;214;244m2535301200456458802993406414848[0m
+[38;2;205;214;244m20769187434139310514121985316888576[0m
+[38;2;205;214;244m70368744194048[0m
+[38;2;205;214;244m1298074214633706907132624082337792[0m
+[38;2;205;214;244m2535301200456458802993406476288[0m
+[38;2;205;214;244m70368744308736[0m
+[38;2;205;214;244m81129638414606681695789005406208[0m
+[38;2;205;214;244m5192296858534827628530496329744384[0m
+[38;2;205;214;244m2958557217822987346387886199828119551[0m
+[31m[38;2;205;214;244m[31mERROR[0m[0m
+[38;2;205;214;244mtest/bloom_test.py::test_adds_key 281474976710657[0m
+[38;2;205;214;244m162259276829213363391578010288130[0m
+[38;2;205;214;244m2596148429267413814265248164610052[0m
+[38;2;205;214;244m20769187434139310514121985316880392[0m
+[38;2;205;214;244m2658455991569831745807614120560689168[0m
+[38;2;205;214;244m166153499473114484112975882535043104[0m
+[38;2;205;214;244m281474976710720[0m
+[38;2;205;214;244m70368744177792[0m
+[38;2;205;214;244m2535301200456458802993406411008[0m
+[38;2;205;214;244m158456325028528675187087901184[0m
+[38;2;205;214;244m41538374868278621028243970633761792[0m
+[38;2;205;214;244m83076749736557242056487941267523584[0m
+[38;2;205;214;244m2535301200456458802993406414848[0m
+[38;2;205;214;244m20769187434139310514121985316888576[0m
+[38;2;205;214;244m70368744194048[0m
+[38;2;205;214;244m1298074214633706907132624082337792[0m
+[38;2;205;214;244m2535301200456458802993406476288[0m
+[38;2;205;214;244m70368744308736[0m
+[38;2;205;214;244m81129638414606681695789005406208[0m
+[38;2;205;214;244m5192296858534827628530496329744384[0m
+[38;2;205;214;244m2958557217822987346387886199828119551[0m
+[31m[38;2;205;214;244m[31mERROR[0m[0m
+[38;2;205;214;244mtest/bloom_test.py::test_add_sets_two_bits 281474976710657[0m
+[38;2;205;214;244m162259276829213363391578010288130[0m
+[38;2;205;214;244m2596148429267413814265248164610052[0m
+[38;2;205;214;244m20769187434139310514121985316880392[0m
+[38;2;205;214;244m2658455991569831745807614120560689168[0m
+[38;2;205;214;244m166153499473114484112975882535043104[0m
+[38;2;205;214;244m281474976710720[0m
+[38;2;205;214;244m70368744177792[0m
+[38;2;205;214;244m2535301200456458802993406411008[0m
+[38;2;205;214;244m158456325028528675187087901184[0m
+[38;2;205;214;244m41538374868278621028243970633761792[0m
+[38;2;205;214;244m83076749736557242056487941267523584[0m
+[38;2;205;214;244m2535301200456458802993406414848[0m
+[38;2;205;214;244m20769187434139310514121985316888576[0m
+[38;2;205;214;244m70368744194048[0m
+[38;2;205;214;244m1298074214633706907132624082337792[0m
+[38;2;205;214;244m2535301200456458802993406476288[0m
+[38;2;205;214;244m70368744308736[0m
+[38;2;205;214;244m81129638414606681695789005406208[0m
+[38;2;205;214;244m5192296858534827628530496329744384[0m
+[38;2;205;214;244m2958557217822987346387886199828119551[0m
+[31m[38;2;205;214;244m[31mERROR[0m[0m
+[38;2;205;214;244mtest/bloom_test.py::test_add_does_not_add_another_item 281474976710657[0m
+[38;2;205;214;244m162259276829213363391578010288130[0m
+[38;2;205;214;244m2596148429267413814265248164610052[0m
+[38;2;205;214;244m20769187434139310514121985316880392[0m
+[38;2;205;214;244m2658455991569831745807614120560689168[0m
+[38;2;205;214;244m166153499473114484112975882535043104[0m
+[38;2;205;214;244m281474976710720[0m
+[38;2;205;214;244m70368744177792[0m
+[38;2;205;214;244m2535301200456458802993406411008[0m
+[38;2;205;214;244m158456325028528675187087901184[0m
+[38;2;205;214;244m41538374868278621028243970633761792[0m
+[38;2;205;214;244m83076749736557242056487941267523584[0m
+[38;2;205;214;244m2535301200456458802993406414848[0m
+[38;2;205;214;244m20769187434139310514121985316888576[0m
+[38;2;205;214;244m70368744194048[0m
+[38;2;205;214;244m1298074214633706907132624082337792[0m
+[38;2;205;214;244m2535301200456458802993406476288[0m
+[38;2;205;214;244m70368744308736[0m
+[38;2;205;214;244m81129638414606681695789005406208[0m
+[38;2;205;214;244m5192296858534827628530496329744384[0m
+[38;2;205;214;244m2958557217822987346387886199828119551[0m
+[31m[38;2;205;214;244m[31mERROR[0m[0m
+[38;2;205;214;244mtest/bloom_test.py::test_adds_all_entries 281474976710657[0m
+[38;2;205;214;244m162259276829213363391578010288130[0m
+[38;2;205;214;244m2596148429267413814265248164610052[0m
+[38;2;205;214;244m20769187434139310514121985316880392[0m
+[38;2;205;214;244m2658455991569831745807614120560689168[0m
+[38;2;205;214;244m166153499473114484112975882535043104[0m
+[38;2;205;214;244m281474976710720[0m
+[38;2;205;214;244m70368744177792[0m
+[38;2;205;214;244m2535301200456458802993406411008[0m
+[38;2;205;214;244m158456325028528675187087901184[0m
+[38;2;205;214;244m41538374868278621028243970633761792[0m
+[38;2;205;214;244m83076749736557242056487941267523584[0m
+[38;2;205;214;244m2535301200456458802993406414848[0m
+[38;2;205;214;244m20769187434139310514121985316888576[0m
+[38;2;205;214;244m70368744194048[0m
+[38;2;205;214;244m1298074214633706907132624082337792[0m
+[38;2;205;214;244m2535301200456458802993406476288[0m
+[38;2;205;214;244m70368744308736[0m
+[38;2;205;214;244m81129638414606681695789005406208[0m
+[38;2;205;214;244m5192296858534827628530496329744384[0m
+[38;2;205;214;244m2958557217822987346387886199828119551[0m
+[31m[38;2;205;214;244m[31mERROR[0m[0m
+[38;2;205;214;244mtest/bloom_test.py::test_false_positive_rate_is_low 281474976710657[0m
+[38;2;205;214;244m162259276829213363391578010288130[0m
+[38;2;205;214;244m2596148429267413814265248164610052[0m
+[38;2;205;214;244m20769187434139310514121985316880392[0m
+[38;2;205;214;244m2658455991569831745807614120560689168[0m
+[38;2;205;214;244m166153499473114484112975882535043104[0m
+[38;2;205;214;244m281474976710720[0m
+[38;2;205;214;244m70368744177792[0m
+[38;2;205;214;244m2535301200456458802993406411008[0m
+[38;2;205;214;244m158456325028528675187087901184[0m
+[38;2;205;214;244m41538374868278621028243970633761792[0m
+[38;2;205;214;244m83076749736557242056487941267523584[0m
+[38;2;205;214;244m2535301200456458802993406414848[0m
+[38;2;205;214;244m20769187434139310514121985316888576[0m
+[38;2;205;214;244m70368744194048[0m
+[38;2;205;214;244m1298074214633706907132624082337792[0m
+[38;2;205;214;244m2535301200456458802993406476288[0m
+[38;2;205;214;244m70368744308736[0m
+[38;2;205;214;244m81129638414606681695789005406208[0m
+[38;2;205;214;244m5192296858534827628530496329744384[0m
+[38;2;205;214;244m2958557217822987346387886199828119551[0m
+[31m[38;2;205;214;244m[31mERROR[0m[0m
+[38;2;205;214;244mtest/bubble_test.py::test_sorts [0m[32m[38;2;205;214;244m[32mPASSED[0m[0m
+[38;2;205;214;244mtest/dll_test.py::test_adds_front [0m[32m[38;2;205;214;244m[32mPASSED[0m[0m
+[38;2;205;214;244mtest/dll_test.py::test_adds_back [0m[32m[38;2;205;214;244m[32mPASSED[0m[0m
+[38;2;205;214;244mtest/dll_test.py::test_removes_front [0m[32m[38;2;205;214;244m[32mPASSED[0m[0m
+[38;2;205;214;244mtest/dll_test.py::test_removes_back [0m[32m[38;2;205;214;244m[32mPASSED[0m[0m
+[38;2;205;214;244mtest/dll_test.py::test_concatenates [0m[32m[38;2;205;214;244m[32mPASSED[0m[0m
+[38;2;205;214;244mtest/dll_test.py::test_removals_do_not_break_concatenation [0m[32m[38;2;205;214;244m[32mPASSED[0m[0m
+[38;2;205;214;244mtest/dll_test.py::test_str_reverse [0m[32m[38;2;205;214;244m[32mPASSED[0m[0m
+[38;2;205;214;244mtest/dll_test.py::test_reverse [0m[32m[38;2;205;214;244m[32mPASSED[0m[0m
+[38;2;205;214;244mtest/dll_test.py::test_remove [0m[32m[38;2;205;214;244m[32mPASSED[0m[0m
+[38;2;205;214;244mtest/fraction_test.py::test_represents_simple_fraction [0m[32m[38;2;205;214;244m[32mPASSED[0m[0m
+[38;2;205;214;244mtest/fraction_test.py::test_reduces_to_lowest_terms [0m[32m[38;2;205;214;244m[32mPASSED[0m[0m
+[38;2;205;214;244mtest/fraction_test.py::test_handles_negative_denominator [0m[32m[38;2;205;214;244m[32mPASSED[0m[0m
+[38;2;205;214;244mtest/fraction_test.py::test_handles_negative_numerator_and_denominator [0m[32m[38;2;205;214;244m[32mPASSED[0m[0m
+[38;2;205;214;244mtest/fraction_test.py::test_represents_improper_fraction [0m[32m[38;2;205;214;244m[32mPASSED[0m[0m
+[38;2;205;214;244mtest/fraction_test.py::test_adds [0m[32m[38;2;205;214;244m[32mPASSED[0m[0m
+[38;2;205;214;244mtest/fraction_test.py::test_subtracts [0m[32m[38;2;205;214;244m[32mPASSED[0m[0m
+[38;2;205;214;244mtest/fraction_test.py::test_multiplies [0m[32m[38;2;205;214;244m[32mPASSED[0m[0m
+[38;2;205;214;244mtest/fraction_test.py::test_divides [0m[32m[38;2;205;214;244m[32mPASSED[0m[0m
+[38;2;205;214;244mtest/fraction_test.py::test_approximates [0m[32m[38;2;205;214;244m[32mPASSED[0m[0m
+[38;2;205;214;244mtest/gcd_test.py::test_finds_gcd_when_a_less [0m[32m[38;2;205;214;244m[32mPASSED[0m[0m
+[38;2;205;214;244mtest/gcd_test.py::test_finds_gcd_when_a_greater [0m[32m[38;2;205;214;244m[32mPASSED[0m[0m
+[38;2;205;214;244mtest/gcd_test.py::test_finds_gcd_when_a_is_exact_divisor [0m[32m[38;2;205;214;244m[32mPASSED[0m[0m
+[38;2;205;214;244mtest/log_test.py::test_works_for_exact_power [0m[32m[38;2;205;214;244m[32mPASSED[0m[0m
+[38;2;205;214;244mtest/log_test.py::test_works_for_inexact_power [0m[32m[38;2;205;214;244m[32mPASSED[0m[0m
+[38;2;205;214;244mtest/log_test.py::test_works_if_a_is_greater_than_b [0m[32m[38;2;205;214;244m[32mPASSED[0m[0m
+[38;2;205;214;244mtest/log_test.py::test_works_if_division_would_skip_over_1 [0m[32m[38;2;205;214;244m[32mPASSED[0m[0m
+[38;2;205;214;244mtest/log_test.py::test_matches_math_library [0m[32m[38;2;205;214;244m[32mPASSED[0m[0m
+[38;2;205;214;244mtest/pow_test.py::test_2_3 [0m[32m[38;2;205;214;244m[32mPASSED[0m[0m
+[38;2;205;214;244mtest/pow_test.py::test_10_3 [0m[32m[38;2;205;214;244m[32mPASSED[0m[0m
+
+[31m[1m[38;2;205;214;244m[31m[1m________________________________________________ ERROR at setup of test_key_is_not_initially_present ________________________________________________[0m[0m
+[1m[31m[38;2;205;214;244m[31m[1mtest/bloom_test.py[0m[0m[38;2;205;214;244m:13: in filter_[0m
+[38;2;205;214;244m    yield BloomFilter() # The test is run here[0m
+[1m[31m[38;2;205;214;244m[31m[1msrc/bloom.py[0m[0m[38;2;205;214;244m:26: in __init__[0m
+[38;2;205;214;244m    self.bits |= 1 << hashed[0m
+[1m[31m[38;2;205;214;244m[31m[1mE   OverflowError: too many digits in integer[0m[0m
+[31m[1m[38;2;205;214;244m[31m[1m__________________________________________________________ ERROR at setup of test_adds_key __________________________________________________________[0m[0m
+[1m[31m[38;2;205;214;244m[31m[1mtest/bloom_test.py[0m[0m[38;2;205;214;244m:13: in filter_[0m
+[38;2;205;214;244m    yield BloomFilter() # The test is run here[0m
+[1m[31m[38;2;205;214;244m[31m[1msrc/bloom.py[0m[0m[38;2;205;214;244m:26: in __init__[0m
+[38;2;205;214;244m    self.bits |= 1 << hashed[0m
+[1m[31m[38;2;205;214;244m[31m[1mE   OverflowError: too many digits in integer[0m[0m
+[31m[1m[38;2;205;214;244m[31m[1m_____________________________________________________ ERROR at setup of test_add_sets_two_bits ______________________________________________________[0m[0m
+[1m[31m[38;2;205;214;244m[31m[1mtest/bloom_test.py[0m[0m[38;2;205;214;244m:13: in filter_[0m
+[38;2;205;214;244m    yield BloomFilter() # The test is run here[0m
+[1m[31m[38;2;205;214;244m[31m[1msrc/bloom.py[0m[0m[38;2;205;214;244m:26: in __init__[0m
+[38;2;205;214;244m    self.bits |= 1 << hashed[0m
+[1m[31m[38;2;205;214;244m[31m[1mE   OverflowError: too many digits in integer[0m[0m
+[31m[1m[38;2;205;214;244m[31m[1m_______________________________________________ ERROR at setup of test_add_does_not_add_another_item ________________________________________________[0m[0m
+[1m[31m[38;2;205;214;244m[31m[1mtest/bloom_test.py[0m[0m[38;2;205;214;244m:13: in filter_[0m
+[38;2;205;214;244m    yield BloomFilter() # The test is run here[0m
+[1m[31m[38;2;205;214;244m[31m[1msrc/bloom.py[0m[0m[38;2;205;214;244m:26: in __init__[0m
+[38;2;205;214;244m    self.bits |= 1 << hashed[0m
+[1m[31m[38;2;205;214;244m[31m[1mE   OverflowError: too many digits in integer[0m[0m
+[31m[1m[38;2;205;214;244m[31m[1m______________________________________________________ ERROR at setup of test_adds_all_entries ______________________________________________________[0m[0m
+[1m[31m[38;2;205;214;244m[31m[1mtest/bloom_test.py[0m[0m[38;2;205;214;244m:13: in filter_[0m
+[38;2;205;214;244m    yield BloomFilter() # The test is run here[0m
+[1m[31m[38;2;205;214;244m[31m[1msrc/bloom.py[0m[0m[38;2;205;214;244m:26: in __init__[0m
+[38;2;205;214;244m    self.bits |= 1 << hashed[0m
+[1m[31m[38;2;205;214;244m[31m[1mE   OverflowError: too many digits in integer[0m[0m
+[31m[1m[38;2;205;214;244m[31m[1m_________________________________________________ ERROR at setup of test_false_positive_rate_is_low _________________________________________________[0m[0m
+[1m[31m[38;2;205;214;244m[31m[1mtest/bloom_test.py[0m[0m[38;2;205;214;244m:13: in filter_[0m
+[38;2;205;214;244m    yield BloomFilter() # The test is run here[0m
+[1m[31m[38;2;205;214;244m[31m[1msrc/bloom.py[0m[0m[38;2;205;214;244m:26: in __init__[0m
+[38;2;205;214;244m    self.bits |= 1 << hashed[0m
+[1m[31m[38;2;205;214;244m[31m[1mE   OverflowError: too many digits in integer[0m[0m
+[36m[1m[38;2;205;214;244m[36m[1m============================================================== short test summary info ==============================================================[0m[0m
+[31m[38;2;205;214;244m[31mERROR[0m[0m[38;2;205;214;244m test/bloom_test.py::[0m[1m[38;2;205;214;244m[1mtest_key_is_not_initially_present[0m[0m[38;2;205;214;244m - OverflowError: too many digits in integer[0m
+[31m[38;2;205;214;244m[31mERROR[0m[0m[38;2;205;214;244m test/bloom_test.py::[0m[1m[38;2;205;214;244m[1mtest_adds_key[0m[0m[38;2;205;214;244m - OverflowError: too many digits in integer[0m
+[31m[38;2;205;214;244m[31mERROR[0m[0m[38;2;205;214;244m test/bloom_test.py::[0m[1m[38;2;205;214;244m[1mtest_add_sets_two_bits[0m[0m[38;2;205;214;244m - OverflowError: too many digits in integer[0m
+[31m[38;2;205;214;244m[31mERROR[0m[0m[38;2;205;214;244m test/bloom_test.py::[0m[1m[38;2;205;214;244m[1mtest_add_does_not_add_another_item[0m[0m[38;2;205;214;244m - OverflowError: too many digits in integer[0m
+[31m[38;2;205;214;244m[31mERROR[0m[0m[38;2;205;214;244m test/bloom_test.py::[0m[1m[38;2;205;214;244m[1mtest_adds_all_entries[0m[0m[38;2;205;214;244m - OverflowError: too many digits in integer[0m
+[31m[38;2;205;214;244m[31mERROR[0m[0m[38;2;205;214;244m test/bloom_test.py::[0m[1m[38;2;205;214;244m[1mtest_false_positive_rate_is_low[0m[0m[38;2;205;214;244m - OverflowError: too many digits in integer[0m
+[31m[38;2;205;214;244m[31m=========================================================== [0m[32m[38;2;205;214;244m[32m30 passed[0m[0m[38;2;205;214;244m, [0m[31m[1m[38;2;205;214;244m[31m[1m6 errors[0m[0m[31m[38;2;205;214;244m[31m in 0.14s[0m[0m[31m[38;2;205;214;244m[31m ============================================================[0m[0m
+[1mSTDIN[0m
+[38;2;205;214;244mSome tests failed. Please check the output above for details.[0m
+Some tests failed. Please check the output above for details.
+Virtual environment deactivated.
+Virtual environment removed.
