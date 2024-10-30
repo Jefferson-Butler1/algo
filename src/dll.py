@@ -79,7 +79,6 @@ class DoublyLinkedList:
     def remove(self, target):
         curr = self.head.next
         while curr != self.head:
-            print(target, curr)
             if curr.item == target:
                 curr.prev.next = curr.next
                 curr.next.prev = curr.prev
