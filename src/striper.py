@@ -1,4 +1,6 @@
 class Striper:
+    def __name__(self):
+        return "Striper"
 
 
     def gerrymander(self, electorate, party):

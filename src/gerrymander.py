@@ -1,4 +1,6 @@
 class Gerrymander:
+    def __name__(self):
+        return "Gerrymander"
     """A class that implements district optimization algorithms for electoral mapping.
     
     This implementation ensures districts are contiguous and of equal size while

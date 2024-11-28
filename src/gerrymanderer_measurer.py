@@ -22,6 +22,13 @@ def measure(d, n, gerrymanderer):
 
 from striper import Striper
 from gerrymander import Gerrymander
+from quickMander import QuickMander
 
-print("Striper Score:", measure(9, 100, Striper()))
-print("Gerrymander Score:", measure(9, 2, Gerrymander()))
+reps = 100
+print("number of rounds: ", reps)
+print("Striper Score:    ", measure(9, reps, Striper()))
+print("Quickmander Score:", measure(9, reps, QuickMander()))
+print("Striper Score:    ", measure(19, reps, Striper()))
+print("Quickmander Score:", measure(19, reps, QuickMander()))
+print("Striper Score:    ", measure(29, reps, Striper()))
+print("Quickmander Score:", measure(29, reps, QuickMander()))
