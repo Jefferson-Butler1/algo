@@ -1,5 +1,5 @@
 """
-Jeff Butler, Millen Mistry, Asobo Penn
+Jeff Butler, Millen Mistry, Asobo Penn, isaac ticeson
 A quicker gerrymandering algorithm, that beats Striper. Does not find the *most* optimal districts, 
 but it will always beat striper given more than 100 rounds, regardless of district size. 
 uncomment prints for some fun fancy graphics on districts and islands 
